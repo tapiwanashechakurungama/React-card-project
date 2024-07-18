@@ -1,0 +1,272 @@
+.card-item {
+  padding: none !important;
+  background-color: rgb(35, 36, 47);
+  width: 100vw;
+  border-radius: 15px;
+  text-align: center;
+  transition: all ease 0.3s;
+}
+.card-item img {
+  width: 90vw;
+  height: 30vh;
+}
+.mainCard {
+  padding: 20px;
+  background-color: rgba(2, 2, 124, 0.277);
+}
+.card-item h3 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px 0 0 0;
+  color: white;
+}
+.role {
+  color: rgba(220, 164, 45, 0.901);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+p {
+  color: white;
+  font-size: 9px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  opacity: 0.7;
+  letter-spacing: 0.3px !important;
+  line-height: 12px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+button {
+  width: 4rem;
+  font-size: 10px;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 5px;
+}
+.second-btn {
+  background-color: rgb(26, 119, 150);
+  color: white;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 8px;
+  text-align: left;
+  margin: 8px 0;
+}
+h4 {
+  color: white;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+}
+.footer img {
+  width: 1.5rem !important;
+  cursor: pointer;
+  height: 1.5rem !important;
+  transition: all ease 0.3s;
+}
+.footer img:hover{
+  transform: translateY(-5px);
+}
+.lightmode p {
+  color: black;
+}
+.lightmode h4 {
+  color: black;
+}
+.lightmode .card-item {
+  background-color: white;
+}
+.lightmode .first-btn {
+  background-color: rgb(26, 119, 150);
+  color: white;
+}
+.lightmode .second-btn {
+  background-color: white;
+  color: black;
+  border: 1px rgb(36, 36, 36) solid;
+}
+.lightmode .card-item h3 {
+  color: black;
+}
+.lightmode .footer {
+  background-color: rgba(128, 128, 128, 0.364);
+}
+.lightmode .role {
+  color: rgb(153, 130, 0);
+  opacity: 1.5;
+}
+
+body {
+  background-color: black;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {
+  .card-item {
+    width: 40vw;
+  }
+  .card-item img {
+    width: 40vw;
+    height: 40vh;
+  }
+  .about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 40px;
+  text-align: left;
+  margin: 20px 0;
+}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 40px;
+  border-radius: 0 0 10px 10px;
+}
+.buttons{
+  justify-content: space-evenly;
+}
+  .footer img {
+  width: 2rem !important;
+  cursor: pointer;
+  height: 2rem !important;
+  transition: all ease 0.3s;
+}
+  .about {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 40px;
+  text-align: left;
+  margin: 20px 0;
+}
+  button {
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+  p {
+  color: white;
+  font-size: 14px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  opacity: 0.7;
+  letter-spacing: 0.3px !important;
+  line-height: 22px;
+}
+  .card-item {
+    width: 36vw;
+  }
+  .card-item img {
+    width: 36vw;
+    height: 40vh;
+  }
+
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-item {
+    width: 28vw;
+  }
+  .card-item img {
+    width: 28vw;
+    height: 40vh;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .card-item {
+    width: 25vw;
+  }
+  .card-item img {
+    width: 25vw;
+    height: 50vh;
+  }
+}
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) {
+  .card-item {
+    width: 40vw;
+  }
+  .card-item img {
+    width: 40vw;
+    height: 40vh;
+  }
+}
