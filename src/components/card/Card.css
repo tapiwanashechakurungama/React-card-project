@@ -53,6 +53,11 @@ button {
 .second-btn {
   background-color: rgb(26, 119, 150);
   color: white;
+  transition: all ease 0.5s;
+}
+.second-btn:hover{
+  background-color: white;
+  color: rgb(26, 119, 150);
 }
 .about {
   display: flex;
@@ -61,6 +66,9 @@ button {
   padding: 0 8px;
   text-align: left;
   margin: 8px 0;
+}
+.first-btn:hover{
+  color: rgb(26, 119, 150);
 }
 h4 {
   color: white;
@@ -98,6 +106,9 @@ h4 {
 .lightmode .first-btn {
   background-color: rgb(26, 119, 150);
   color: white;
+}
+.first-btn{
+  transition: all ease 0.5s;
 }
 .lightmode .second-btn {
   background-color: white;
